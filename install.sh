@@ -7,6 +7,12 @@ set -e
 echo "Installing dependencies..."
 sudo pacman -Syu --noconfirm filebeat logstash
 
+# required Logstash plugins
+echo "Installing Logstash HTTP output plugin..."
+sudo /usr/share/logstash/bin/logstash-plugin install logstash-output-http
+
+
+
 echo "Setting up agent..."
 sudo mkdir -p /opt/apache_log_agent
 sudo cp -r ./* /opt/apache_log_agent/
