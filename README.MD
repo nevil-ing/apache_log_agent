@@ -1,6 +1,6 @@
 # 🐍 Apache Log Agent
 
-A lightweight, cross-platform **Python-based agent** for collecting, parsing, and forwarding **Apache web server logs** to security analytics platforms.
+A lightweight, cross-platform **Python-based agent** for collecting, parsing, and forwarding **Apache web server logs** via an API endpoint to security analytics platforms.
 
 This agent wraps and orchestrates the powerful **ELK Stack components (Filebeat and Logstash)** to provide enterprise-grade log processing capabilities with minimal overhead.
 
