@@ -61,7 +61,7 @@ def main():
     if args.install:
         copy_configs()
         install_services()
-        print("✅ Agent installed.")
+        print("Agent installed.")
     elif args.start:
         start_services()
     elif args.stop:
