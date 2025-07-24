@@ -22,5 +22,5 @@ sudo python3 agent.py --install
 sudo systemctl enable filebeat
 sudo systemctl enable logstash
 
-echo "✅ Installation complete!"
+echo "!!! Installation complete!"
 echo "Use: python3 /opt/apache_log_agent/agent.py --start"
