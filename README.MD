@@ -1,4 +1,4 @@
-# 🐍 Apache Log Agent
+# Apache Log Agent
 
 A lightweight, cross-platform **Python-based agent** for collecting, parsing, and forwarding **Apache web server logs** via an API endpoint to security analytics platforms.
 
@@ -6,7 +6,7 @@ This agent wraps and orchestrates the powerful **ELK Stack components (Filebeat 
 
 ---
 
-## 🎯 Purpose
+## Purpose
 
 This agent serves as a complete **log collection and forwarding solution** specifically designed for **Apache HTTP Server** environments.
 
@@ -14,7 +14,7 @@ Rather than reinventing log parsing logic, it **leverages battle-tested tools** 
 
 ---
 
-## 🔧 Core Components
+##  Core Components
 
 - **Filebeat**  
   Lightweight log shipper that tails Apache access and error logs in real-time
@@ -27,9 +27,9 @@ Rather than reinventing log parsing logic, it **leverages battle-tested tools** 
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
-### 📊 Smart Log Processing
+### Smart Log Processing
 
 - Parses Apache Combined Log Format with precision
 - Extracts client IP, user agent, response codes, and request details
@@ -38,7 +38,7 @@ Rather than reinventing log parsing logic, it **leverages battle-tested tools** 
 
 ---
 
-### 🛡️ Security-Oriented Payload Construction
+### Security-Oriented Payload Construction
 
 - Builds structured **JSON payloads optimized for SIEM/XDR ingestion**
 - Includes security metadata fields like `is_anomaly`, `threat_type`, and `anomaly_score`
@@ -47,7 +47,7 @@ Rather than reinventing log parsing logic, it **leverages battle-tested tools** 
 
 ---
 
-### ⚙️ Easy Deployment & Management
+### Easy Deployment & Management
 
 - **Single-command** installation and configuration
 - Automatic service management (`start` / `stop` / `status`)
@@ -56,7 +56,7 @@ Rather than reinventing log parsing logic, it **leverages battle-tested tools** 
 
 ---
 
-### 🌐 Flexible Output Options
+### Flexible Output Options
 
 - Forwards parsed logs to **remote APIs/SIEM solutions via HTTP**
 - Console output for debugging and development
@@ -64,9 +64,9 @@ Rather than reinventing log parsing logic, it **leverages battle-tested tools** 
 
 ---
 
-## 📁 Configuration Highlights
+## Configuration Highlights
 
-### 📥 Filebeat Input Configuration
+### Filebeat Input Configuration
 
 - Monitors `/var/log/httpd/*.log` for Apache logs
 - Automatically tags events with Apache module metadata
@@ -74,7 +74,7 @@ Rather than reinventing log parsing logic, it **leverages battle-tested tools** 
 
 ---
 
-### 🧪 Logstash Processing Pipeline
+### Logstash Processing Pipeline
 
 - Grok parsing using `%{COMBINEDAPACHELOG}` pattern
 - Date parsing and `@timestamp` normalization
